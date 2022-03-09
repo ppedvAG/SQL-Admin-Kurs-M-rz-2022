@@ -36,5 +36,14 @@
  ## Audit
  ## Richtlinien
  ## Registrierte Server
+ 
+ # Indizes
+ ## IX Wartung
+ 
+ # Monitoring
+ ## Profiler Perfmon
+ ## DB Optimierungsratgeber
+ ## DMVs
+ ## 
 
 
