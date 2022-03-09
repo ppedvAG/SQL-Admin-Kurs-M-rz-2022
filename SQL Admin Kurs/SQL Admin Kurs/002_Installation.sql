@@ -27,6 +27,8 @@ Dienstkonto: DomänenUser,
 	lokales Konto
 	Remotezugriffe per Computerkonto
 
+	--auch wenn wir beim Setuo kein NT Servicekonto angeben, so wird das immer --bei lok Zugriffen verwenden.
+
 
 Security
 NT Auth

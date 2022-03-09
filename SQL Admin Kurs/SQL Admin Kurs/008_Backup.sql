@@ -60,6 +60,33 @@ V D TTT
 
 
 --Wiederherstellungsmodel
+
+	Wiederherstellungsmodel (Tlog!!!)
+
+	Einfach (schnell-weniger genau restoren)
+	IUP gespeichert, aber dann etwas später automatisch gelöscht
+	Bulk Oerationen werden rudimentär gespeichert
+	--> keine Sicherung des Logfile
+	--oft bei TestServer
+
+	Massenprotkolliert  (Kompromiß)
+		--wie einfach, aber nichts gelöscht
+		--> Logfile muss gesichert werden, sonst wird das Logfile nicht mehr geleert
+		--nur die LogSicherung leert das Logfile
+		--man kann nur dann auf Sek restoren, wenn kein Bulk auftrat
+	--Logshipping verlangt mind dieses Model
+
+	Vollständig (langsamer aber sicherer)
+--wie einfach, aber Bulk Operation sehr detailiert und auch andere Dinge wie IX werden auch protokolliert
+--> Restore auf Sekunde
+--> Logfile wächst stärker
+--ProduktivDB
+--Hochverfügbarkeitslösungen verlangen dieses Model : Spiegeln, Hochverfügbarkeitsgruppen
+
+
+
+
+
 /*
 BACKUP
 
